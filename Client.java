@@ -1,7 +1,7 @@
 /**
  * Client sends an expression to the server.
  * Author : Cho Seo Hyung.
- * Socket program assignment 1.
+ * Socket program 1.
  * Last changed : October 06, 2015.
  */
 import java.io.BufferedInputStream;
@@ -31,11 +31,11 @@ public class Client {
 			inputLine=new DataInputStream(new BufferedInputStream(System.in));
 		}catch(UnknownHostException e){ //catch error when unknown host access.
 			System.err.println("Don't know about host.");
-		}catch(IOException e){ //catch error when unconnected. 
+		}catch(IOException e){ //catch error when unconnected.
 			System.err.println("Couldn't get I/O for the connection to host.");
 		}catch(Exception e){
 			System.err.println("error");
-		}		
+		}
 		if(clientSocket!=null&&os!=null&&is!=null){
 			try{
 				System.out.println("The client started. Type any text. To quit it type 'OK'.");

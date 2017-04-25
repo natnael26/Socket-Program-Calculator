@@ -1,7 +1,7 @@
 /**
  * Program to calculate integers by postfix.
  * Author : Cho Seo Hyung.
- * Socket program assignment 1.
+ * Socket program 1.
  * Last changed : October 06, 2015.
  */
 import java.util.Stack;
@@ -30,7 +30,7 @@ public class Calculator {
 					a++; //jumps ( or ).
 					continue;
 				} else if (str2[a].equals("*") || str2[a].equals("/")) {
-					while (st.isEmpty() == false) // pop the operator stack until it goes empty. 
+					while (st.isEmpty() == false) // pop the operator stack until it goes empty.
 					{
 						String temp1 = (String) st.peek();
 						st.pop();
@@ -40,7 +40,7 @@ public class Calculator {
 					st.push(str2[a]); //then push operator
 				}
 				else if (str2[a].equals("+") || str2[a].equals("-")){
-					if(st.isEmpty() == false){ 
+					if(st.isEmpty() == false){
 						if (st.peek() == "+" || st.peek() == "-") {
 							while (st.isEmpty() == false) // if operator priority is higher than the operator which is in operator stack,
 							{ //pop the operator stack until it goes empty.
@@ -106,7 +106,7 @@ public class Calculator {
 				}
 				else{
 					double temp = op2 / op1;
-					st2.push(temp);	
+					st2.push(temp);
 					//a =1;
 				}
 			}
@@ -124,7 +124,7 @@ public class Calculator {
 		for(int i=0;i<input.length();i++)
 		{
 			char ch = input.charAt(i);
-			if(ch!=' '){ 
+			if(ch!=' '){
 				if((int)ch<48||(int)ch>57){
 					if((int)ch!=40&&(int)ch!=41&&(int)ch!=42&&(int)ch!=43&&(int)ch!=45&&(int)ch!=47)
 						return 0; //if error catched, return 0.
