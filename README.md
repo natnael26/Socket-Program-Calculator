@@ -1,6 +1,5 @@
 # Socket-Program-Calculator
 
-### What is this program?
 - This is **a calculator which is socket programming**.
 
 ### What language did you use?
