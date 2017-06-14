@@ -1,6 +1,6 @@
 # Socket-Program-Calculator
 
-- This is **a calculator which is socket programming**.
+This is **a calculator which is socket programming**.
 
 ### What language did you use?
 - I used *Java*.
