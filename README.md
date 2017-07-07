@@ -1,6 +1,6 @@
 ## Socket-Program-Calculator
 
-This is **a calculator which is socket programming**.
+This is **a calculator using socket programming**.
 
 ## Architecture & Description
 Calculator server is waiting for contact from client. Server get data file which has `server's ip address` and `port number`, then client read this data file to make `a socket`. Client gets String infix expression and send it to server for calculate. Server reads `client request`, then split the string by " " and save it to the string array.  
